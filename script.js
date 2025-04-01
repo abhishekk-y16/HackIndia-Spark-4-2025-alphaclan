@@ -3,7 +3,7 @@ function verifyImage() {
     let formData = new FormData();
     formData.append('image', fileInput.files[0]);
 
-    fetch('/verify', {
+    fetch('https://hackindia-spark-4-2025-alphaclan.onrender.com/verify'), {
         method: 'POST',
         body: formData
     })
